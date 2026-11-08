@@ -1,0 +1,30 @@
+cabal-version:      2.4
+name:               stock-encomendas
+version:            0.1.0.0
+synopsis:           Gestão de Stock e Encomendas (projeto de Programação Funcional)
+build-type:         Simple
+
+common comum
+    default-language: Haskell2010
+    ghc-options:      -Wall
+    build-depends:    base >=4 && <5
+
+library
+    import:           comum
+    hs-source-dirs:   src
+    exposed-modules:  Model
+                      Domain
+                      DadosTeste
+
+executable stock-encomendas
+    import:           comum
+    hs-source-dirs:   app
+    main-is:          Main.hs
+    build-depends:    stock-encomendas
+
+test-suite spec
+    import:           comum
+    type:             exitcode-stdio-1.0
+    hs-source-dirs:   test
+    main-is:          Spec.hs
+    build-depends:    stock-encomendas

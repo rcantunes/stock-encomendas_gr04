@@ -1,0 +1,1 @@
+Pasta reservada para ficheiros de dados (CSV/texto) a ler na Fase 3.
