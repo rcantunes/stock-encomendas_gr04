@@ -78,4 +78,6 @@ ghc -isrc -outputdir build -o spec test/Spec.hs && ./spec
 
 ## Grupo
 
-(Preencher: nomes e números dos elementos)
+- Rodrigo Antunes - al2025167557
+- Tiago Faria - al2025154737
+- José Freitas - al2025167543
